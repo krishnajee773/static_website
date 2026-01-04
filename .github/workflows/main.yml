@@ -1,0 +1,16 @@
+name: my CICD Pipeline in GitHub Actions
+
+on:
+  push: 
+    branches: master
+jobs:
+    build: 
+      runs-on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v4
+
+        - name: My first Step
+          run:
+            echo "This is first CICD Pipeline Static_website"
+            uname -a
